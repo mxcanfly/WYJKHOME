@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{47319179-D7EA-408A-8D98-B1FCABB8F98F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WYJKHOME.Web", "Web\WYJKHOME.Web.csproj", "{47319179-D7EA-408A-8D98-B1FCABB8F98F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{CEE3D2DA-E42E-4C7A-81D2-C99280A9F9FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WYJKHOME.Entity", "Entity\WYJKHOME.Entity.csproj", "{CEE3D2DA-E42E-4C7A-81D2-C99280A9F9FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{C9F0D039-74E5-4ED5-8488-AA67AEABE666}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WYJKHOME.Data", "Data\WYJKHOME.Data.csproj", "{C9F0D039-74E5-4ED5-8488-AA67AEABE666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
