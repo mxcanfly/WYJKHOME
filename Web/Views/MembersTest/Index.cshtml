@@ -1,0 +1,406 @@
+﻿@model IEnumerable<Web.Models.Members>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MemberName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MemberPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InviteCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsComplete)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrueName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CertificateType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CertificateNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PoliticalStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Education)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Birthday)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sex)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QQ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Alipay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankCardNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankAccount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserAccount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondContact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondContactPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InsuranceArea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HouseholdType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessIdentityCardNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessUser)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessIdentityPhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessLicensePhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseApplyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseApplyIdentityCardNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseApplyIdentityPhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseApplyUserPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseApplyUserEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseLicensePhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseArea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseLegal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseLegalIdentityCardNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterprisePeopleNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SocialSecurityCreditCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseIsThreeInOne)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseBusinessLicense)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseTaxRegistrationCertificate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseOrganizationCodeCertificate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpriseFixedTelePhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsAuthentication)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxpayerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactUser)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactUserPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OpenAccountPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Account)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SocialSecurityAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccumulationFundAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ServiceCost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstBacklogCost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bucha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HeadPortrait)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MemberName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MemberPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InviteCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsComplete)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrueName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CertificateType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CertificateNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PoliticalStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Education)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Birthday)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sex)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QQ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Alipay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankCardNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankAccount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserAccount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondContact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondContactPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InsuranceArea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HouseholdType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessIdentityCardNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessUser)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessIdentityPhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessLicensePhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseApplyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseApplyIdentityCardNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseApplyIdentityPhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseApplyUserPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseApplyUserEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseLicensePhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseArea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseLegal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseLegalIdentityCardNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterprisePeopleNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SocialSecurityCreditCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseIsThreeInOne)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseBusinessLicense)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseTaxRegistrationCertificate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseOrganizationCodeCertificate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpriseFixedTelePhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsAuthentication)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaxpayerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaxNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactUser)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactUserPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OpenAccountPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Account)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SocialSecurityAmount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccumulationFundAmount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServiceCost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstBacklogCost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bucha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HeadPortrait)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MemberID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MemberID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MemberID })
+        </td>
+    </tr>
+}
+
+</table>
